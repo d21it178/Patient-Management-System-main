@@ -43,7 +43,9 @@ const [alert, setAlert] = useState(null);
                <Route
                  path="patient"  element={<PatientList showAlert={showAlert}/>}
                />
+               
               </Routes>
+
             </Container>
             <Footer />
           </Router>
