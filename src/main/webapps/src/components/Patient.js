@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Container, Form, Card, Button } from "react-bootstrap";
 import { Navigate, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Login from "./Login";
 
 export default function Student(props) {
   const [id, setpatientId] = useState(null);
@@ -76,8 +77,10 @@ export default function Student(props) {
     <div className="my-3">
       <Container>
         <Card>
+          
           <Form onSubmit={patientId != null ? updatePatient : savePatient}>
             <Card.Header>
+        
               <strong>{patientId!=null? "Update Patient Information":"Add Patient Information"}</strong>
             </Card.Header>
             <Card.Body>
