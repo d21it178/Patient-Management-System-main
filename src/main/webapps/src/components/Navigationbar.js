@@ -15,9 +15,9 @@ export default function NavigationBar() {
           <Nav className="me-auto">
             <Link to="/patient ">Add Patient &nbsp;</Link>
             <Link to="/listPatients">List Patient</Link>
-            <Link to="/Register">Register</Link>
-
-
+          </Nav>
+          <Nav>
+          <Link to="/Register">Register</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -25,4 +25,4 @@ export default function NavigationBar() {
     </div>
   )
 
-}
+}  
